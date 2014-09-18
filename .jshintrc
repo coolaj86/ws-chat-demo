@@ -1,0 +1,6 @@
+{ "globals": { "angular": false }
+, "node": true
+, "laxbreak": true
+, "laxcomma": true
+, "onevar": true
+}

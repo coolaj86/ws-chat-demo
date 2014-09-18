@@ -1,0 +1,32 @@
+{
+  "name": "ws-chat-demo",
+  "version": "0.1.0",
+  "description": "",
+  "main": "config.js",
+  "bin": {
+    "ws-chat": "server-runner.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "AJ ONeal <coolaj86@gmail.com> (http://coolaj86.com/)",
+  "license": "Apache2",
+  "dependencies": {
+    "body-parser": "^1.8.2",
+    "compression": "^1.1.0",
+    "connect": "^3.2.0",
+    "connect-send-error": "^1.0.3",
+    "connect-send-json": "^1.0.0",
+    "cookie-parser": "^1.3.3",
+    "cookie-session": "^1.0.2",
+    "express-session": "^1.8.2",
+    "node-uuid": "^1.4.1",
+    "qs": "^2.2.3",
+    "serve-static": "^1.6.2",
+    "urlrouter": "^0.5.4"
+  }
+}

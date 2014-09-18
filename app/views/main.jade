@@ -1,0 +1,29 @@
+div(ui-view="content" autoscroll="false")
+  .container
+    .row(ng-if="M.states.length >= 0")
+      .col-xs-12
+        form(ng-submit="M.send()")
+          .col-xs-12
+            label 
+              span Name
+              input.form-control(ng-model="M.message.user")
+          .col-xs-12
+            label 
+              span Message
+              textarea.form-control(ng-model="M.message.body")
+          .col-xs-12
+            button.btn.btn-primary(type="submit") Submit
+
+    .row
+      .col-xs-12
+        div(ng-repeat="state in M.states")
+          pre
+            code {{ state | json }}
+
+    .row(ng-if="!M.states")
+      .col-xs-12
+        p. Choose your connection:
+      .col-xs-6
+        button.btn.btn-default(ng-click="M.joinPoll()") Long Poll
+      .col-xs-6
+        button.btn.btn-primary(ng-click="M.joinWs()") WebSocket
