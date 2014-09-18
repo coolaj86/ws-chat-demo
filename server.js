@@ -33,7 +33,6 @@ module.exports.create = function (server) {
       , verify: undefined
       }))
       .use(require('compression')())
-      .use(require('./lib/connect-shims/redirect'))
       .use(require('cookie-parser')())
       .use(require('express-session')({
         secret: config.sessionSecret
