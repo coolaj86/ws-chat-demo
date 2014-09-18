@@ -11,7 +11,7 @@ It has so many features and transports that I wouldn't know how to debug it.
 
 Either someone is stuck in the 90s or they're not (and we were able to agree on this).
 We don't care for supporting flash and iFrames and progress events, etc - if they have
-an old crappy browser they can have a crappier experience.
+an lowest common denominator browser, they can have a lowest common denominator experience.
 
 
 Setup
